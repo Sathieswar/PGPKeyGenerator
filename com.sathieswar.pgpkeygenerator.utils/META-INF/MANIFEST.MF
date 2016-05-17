@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Utils
+Bundle-SymbolicName: com.sathieswar.pgpkeygenerator.utils
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: com.sathieswar.pgpkeygenerator.utils.Activator
+Bundle-Vendor: SATHIESWAR
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ com.sathieswar.pgpkeygenerator.libs;bundle-version="1.0.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-ActivationPolicy: lazy
+Export-Package: com.sathieswar.pgpkeygenerator.utils

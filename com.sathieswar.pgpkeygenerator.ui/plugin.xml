@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="com.sathieswar.pgpkeygenerator.ui.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="com.sathieswar.pgpkeygenerator.ui.Perspective"
+            id="com.sathieswar.pgpkeygenerator.ui.perspective">
+      </perspective>
+   </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="com.sathieswar.pgpkeygenerator.ui.application"
+            name="PGPKeyGenerator">
+         <property
+               name="windowImages"
+               value="icons/alt_window_16.gif,icons/alt_window_32.gif">
+         </property>
+      </product>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="com.sathieswar.pgpkeygenerator.ui.views.NewPGPKeyConfigurationView"
+            id="com.sathieswar.pgpkeygenerator.ui.views.NewPGPKeyConfigurationView"
+            name="New PGP Key Configuration"
+            restorable="true">
+      </view>
+   </extension>
+
+</plugin>
